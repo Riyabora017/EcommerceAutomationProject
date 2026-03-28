@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 4 failed,  3 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="cucumber.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Positive Test of Submitting the order&quot;, &quot;Purchase the Order from Ecommerce Website&quot;)">runScenario("Positive Test of Submitting the order", "Purchase the Order from Ecommerce Website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com})">submitOrder({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com})">submitOrder({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="OrderHistory">OrderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="ProductErrorValidation">ProductErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="rahulshettyacademy.tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">rahulshettyacademy.tests.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com})">
+                  </a> <!-- submitOrder({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: userEmail
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:169)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at rahulshettyacademy.pageobjects.LandingPage.loginApplication(LandingPage.java:36)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com})">
+                  </a> <!-- submitOrder({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-syl-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1029, 133). Other element would receive the click: &lt;div _ngcontent-syl-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=146.0.7680.164)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a0c7d9c94a081fbe4a1e4f5bb0b8736, clickElement {id=f.5D9FCD95C117050BE041BD7186895D7F.d.83AB6BD360020BA6899F537B2CF5C175.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57793}, goog:processID: 14016, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57793/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6a0c7d9c94a081fbe4a1e4f5bb0b8736)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 6a0c7d9c94a081fbe4a1e4f5bb0b8736
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:50)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">rahulshettyacademy.tests.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginErrorValidation">
+                  </a> <!-- LoginErrorValidation -->
+                  <span class="method-name">LoginErrorValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+	at rahulshettyacademy.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cucumber.TestNGTestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Positive Test of Submitting the order&quot;, &quot;Purchase the Order from Ecommerce Website&quot;)">
+                  </a> <!-- runScenario("Positive Test of Submitting the order", "Purchase the Order from Ecommerce Website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Positive Test of Submitting the order","Purchase the Order from Ecommerce Website")</span>
+                  <div class="stack-trace">io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in rahulshettyacademy.stepDefinitions.StepDefinitionImpl.message_is_displayed_on_ConfirmationPage(java.lang.String) and rahulshettyacademy.stepDefinitions.StepDefinitionImpl.message_is_displayed_on_confirmation_page(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:313)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">rahulshettyacademy.tests.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrderHistory">
+                  </a> <!-- OrderHistory -->
+                  <span class="method-name">OrderHistory</span>
+                  <div class="stack-trace">java.lang.Throwable: Method rahulshettyacademy.tests.SubmitOrderTest.OrderHistory() on instance rahulshettyacademy.tests.SubmitOrderTest@70e9c95d depends on not successfully finished methods 
+[rahulshettyacademy.tests.SubmitOrderTest.submitOrder() on instance rahulshettyacademy.tests.SubmitOrderTest@70e9c95d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">rahulshettyacademy.tests.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginErrorValidation">
+                  </a> <!-- LoginErrorValidation -->
+                  <span class="method-name">LoginErrorValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+	at rahulshettyacademy.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductErrorValidation">
+                  </a> <!-- ProductErrorValidation -->
+                  <span class="method-name">ProductErrorValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=146.0.7680.164) (error code: &quot;target frame detached&quot;)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [100d565bfc81740cbc6c11fce356c5e7, get {url=https://rahulshettyacademy.com/client}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57769}, goog:processID: 12188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57769/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 100d565bfc81740cbc6c11fce356c5e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:172)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:372)
+	at rahulshettyacademy.pageobjects.LandingPage.goTo(LandingPage.java:49)
+	at rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cucumber.TestNGTestRunner&quot;/&gt;
+      &lt;class name=&quot;rahulshettyacademy.TestComponents.BaseTest&quot;/&gt;
+      &lt;class name=&quot;rahulshettyacademy.tests.ErrorValidationsTest&quot;/&gt;
+      &lt;class name=&quot;rahulshettyacademy.tests.StandAloneTest&quot;/&gt;
+      &lt;class name=&quot;rahulshettyacademy.tests.SubmitOrderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">ErrorHandling</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginErrorValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Purchase</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">submitOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'submitOrder')
+data.setCell(0, 2, 'rahulshettyacademy.tests.SubmitOrderTest')
+data.setCell(0, 3, 5223);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'submitOrder')
+data.setCell(1, 2, 'rahulshettyacademy.tests.SubmitOrderTest')
+data.setCell(1, 3, 2239);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginErrorValidation')
+data.setCell(2, 2, 'rahulshettyacademy.tests.ErrorValidationsTest')
+data.setCell(2, 3, 1438);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginErrorValidation')
+data.setCell(3, 2, 'rahulshettyacademy.tests.ErrorValidationsTest')
+data.setCell(3, 3, 801);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'cucumber.TestNGTestRunner')
+data.setCell(4, 3, 100);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ProductErrorValidation')
+data.setCell(5, 2, 'rahulshettyacademy.tests.ErrorValidationsTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'OrderHistory')
+data.setCell(6, 2, 'rahulshettyacademy.tests.SubmitOrderTest')
+data.setCell(6, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cucumber.TestNGTestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@bb25753)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Positive Test of Submitting the order", "Purchase the Order from Ecommerce Website")</span>
+                <span class="method-start">1291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1408 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahulshettyacademy.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">1454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginErrorValidation</span>
+                <span class="method-start">22668 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">24115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">24438 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginErrorValidation</span>
+                <span class="method-start">30477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">31281 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">31447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TearDown</span>
+                <span class="method-start">36560 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahulshettyacademy.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">37125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">submitOrder({password=IamKing@000, product=ZARA COAT 3, email=Borariya@gmail.com})</span>
+                <span class="method-start">50028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">55254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">55412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">submitOrder({password=Rashi@000, product=ADIDAS ORIGINAL, email=rashi1@gmail.com})</span>
+                <span class="method-start">58386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TearDown</span>
+                <span class="method-start">60639 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
